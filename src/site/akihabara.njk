@@ -15,29 +15,7 @@ heroText: text-black
          {# tab start #}
          <div>
             <div class="relative mx-auto akihabara">
-               <div class="tabs">
-                  <div class="tab">
-                     <input type="radio" id="tab-1" name="tab-group-1" checked>
-                     <label for="tab-1">Tab One</label>
-                     <div class="content">
-                        stuff
-                     </div>
-                  </div>
-                  <div class="tab">
-                     <input type="radio" id="tab-2" name="tab-group-1">
-                     <label for="tab-2">Tab Two</label>
-                     <div class="content">
-                        stuff
-                     </div>
-                  </div>
-                  <div class="tab">
-                     <input type="radio" id="tab-3" name="tab-group-1">
-                     <label for="tab-3">Tab Three</label>
-                     <div class="content">
-                        stuff
-                     </div>
-                  </div>
-               </div>
+               
                <div class="tabWrapper xlUp:pl-5 xlUp:pr-2">
                   <div
                      class="relative flex space-x-5 xlUp:ml-10 lgDown:justify-center lgDown:pb-2"
@@ -48,7 +26,8 @@ heroText: text-black
                            value="tab"
                            class="hidden"
                            />
-                        <div class="font-black tracking-widest uppercase item">Akihabara</div>
+                        <div class="font-black tracking-widest uppercase item"
+                        data-content="Akihabara"></div>
                      </label>
                      <label>
                         <input
@@ -58,7 +37,8 @@ heroText: text-black
                            />
                         <div
                            class="font-black tracking-widest uppercase item"
-                           >Kabukicho</div>
+                           data-content="Kabukicho"
+                           ></div>
                      </label>
                   </div>
                   <div class="{.body]: true,
