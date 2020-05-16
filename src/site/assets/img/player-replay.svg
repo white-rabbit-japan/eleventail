@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>replay</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12.4435556,3.049 L1.77688889,3.049 L1.77688889,9.048 L3.55555556,9.048 L3.55555556,5.049 L12.4435556,5.049 L12.4435556,8.047 L16,4.049 L12.4435556,0.048 L12.4435556,3.049 Z M12.4435556,11.048 L12.4435556,15.049 L3.55555556,15.049 L3.55555556,12.047 L0,16.047 L0,16.048 L3.55466667,20.048 L3.55555556,20.048 L3.55555556,17.048 L14.2213333,17.048 L14.2213333,11.048 L12.4435556,11.048 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tokyo-Realtime-Credits-V2-(YELLOW-THEME)" transform="translate(-1218.000000, -1622.000000)">
+            <g id="PLAYER" transform="translate(81.000000, 979.000000)">
+                <g id="replay" transform="translate(1137.000000, 643.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Clip-5" fill="#FFFFFF" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

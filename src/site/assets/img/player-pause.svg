@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="72px" viewBox="0 0 76 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 4</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tokyo-Realtime-Credits-V2" transform="translate(-279.000000, -1619.000000)">
+            <g id="Group-4" transform="translate(281.000000, 1621.000000)">
+                <g id="PLAY-BUTTON" stroke="#7A8C96" stroke-width="3">
+                    <path d="M72,34 C72,52.7778144 55.8823918,68 36,68 C16.1176082,68 0,52.7778144 0,34 C0,15.2221856 16.1176082,0 36,0 C55.8823918,0 72,15.2221856 72,34 Z" id="Stroke-23-Copy"></path>
+                </g>
+                <rect id="Rectangle" fill="#7A8C96" x="26" y="14" width="7" height="40" rx="3.5"></rect>
+                <rect id="Rectangle-Copy-22" fill="#7A8C96" x="39" y="14" width="7" height="40" rx="3.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
