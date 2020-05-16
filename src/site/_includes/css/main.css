@@ -1,0 +1,430 @@
+@tailwind base;
+
+html {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: theme("colors.bg");
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply max-w-full px-6;
+}
+
+@screen xxxlUp {
+  .container {
+    max-width: theme("screens.xxxlUp.min");
+  }
+}
+
+@screen mdDown {
+  .container {
+    @apply px-5;
+  }
+}
+
+@screen sm {
+  .container {
+    @apply px-4;
+  }
+}
+
+@font-face {
+  font-family: "Bender";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/font/bender/regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bender";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/font/bender/bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bender";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/assets/font/bender/black.woff") format("woff");
+}
+
+.intro {
+  @screen lgDown {
+    position: relative;
+    max-width: 100%;
+    padding: 32px 32px 0;
+    text-align: justify;
+  }
+}
+
+.hero {
+  position: relative;
+
+  .logo {
+    position: absolute;
+    top: 6%;
+    left: 4%;
+    width: 14vw;
+    max-width: 200px;
+
+    @screen lgDown {
+      top: 3%;
+      left: 3%;
+      width: 26vw;
+      max-width: 250px;
+    }
+  }
+
+  .img {
+    position: absolute;
+    top: 8%;
+    right: 4%;
+    width: 63%;
+
+    @screen lgDown {
+      top: 8.4%;
+      right: 6%;
+      width: 84%;
+    }
+
+    @screen sm {
+      top: 7%;
+    }
+  }
+
+  .title {
+    position: absolute;
+    top: 35%;
+    left: 4.25%;
+    font-size: min(3vw, 2.5rem);
+    line-height: 1;
+
+    @screen lgDown {
+      top: 77%;
+      left: 6.5%;
+      font-size: min(7vw, 4.2rem);
+      line-height: 1;
+    }
+
+    @screen sm {
+      top: 79%;
+      left: 9%;
+      font-size: 6vw;
+    }
+  }
+
+  .intro {
+    position: absolute;
+    top: 53%;
+    left: 7.25%;
+    max-width: 24%;
+    font-size: 1.125rem;
+  }
+
+  .award {
+    position: absolute;
+    right: 9%;
+    bottom: 1%;
+    max-width: 17.8vw;
+  }
+}
+
+.sponsor {
+  --frame-w: 119px;
+  --frame-h: 143px;
+
+  position: relative;
+  width: 526px;
+  height: var(--frame-h);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--frame-w);
+    height: var(--frame-h);
+    content: "";
+    background: url("/assets/img/border-l.svg") no-repeat center center;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--frame-w);
+    height: var(--frame-h);
+    content: "";
+    background: url("/assets/img/border-r.svg") no-repeat center center;
+  }
+
+  @screen sm {
+    --frame-w: 78px;
+    --frame-h: 90px;
+
+    width: 324px;
+    height: var(--frame-h);
+
+    &::before,
+    &::after {
+      width: var(--frame-w);
+      height: var(--frame-h);
+      background-size: var(--frame-w) var(--frame-h);
+    }
+
+    > div:first-of-type {
+      img {
+        max-width: 190px;
+        &[blk] {
+          max-width: 120px;
+        }
+      }
+    }
+
+    > div:last-of-type {
+      font-size: 0.875rem;
+      a {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+/* tabs */
+
+.body::before {
+  position: absolute;
+  right: -3px;
+  bottom: -103px;
+  left: -3px;
+  display: block;
+  height: 146px;
+  content: '';
+
+  @screen lgDown {
+    display: none;
+  }
+}
+
+.akihabara {
+  input:checked + .item::before {
+    background: url('/assets/img/akihabara/selected-tab.svg') no-repeat center
+      center !important;
+  }
+
+  .body::before {
+    background: url('/assets/img/akihabara/info-frame-bottom.svg') no-repeat
+      center center !important;
+  }
+}
+
+.kabukicho {
+  input:checked + .item::before {
+    background: url('/assets/img/kabukicho/selected-tab.svg') no-repeat center
+      center !important;
+  }
+
+  .body::before {
+    background: url('/assets/img/kabukicho/info-frame-bottom.svg') no-repeat
+      center center !important;
+  }
+}
+
+.tabWrapper {
+  --tab-w: 178px;
+  --tab-h: 50px;
+
+  position: relative;
+  width: 100%;
+
+  .item {
+    position: relative;
+    top: 1px;
+    z-index: 1;
+    width: var(--tab-w);
+    height: var(--tab-h);
+    cursor: pointer;
+
+     /* stylelint-disable-next-line */
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: var(--tab-w);
+      height: var(--tab-h);
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      padding-top: 2px;
+      cursor: pointer;
+      content: attr(data-content);
+      transform: translate3d(-50%, -50%, 0);
+    }
+
+    @screen lgDown {
+      width: 100px;
+      height: 34px;
+      border-radius: 6px;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  input:checked + .item {
+    color: black;
+
+    @screen lgDown {
+      background-color: theme('colors.primary');
+    }
+  }
+
+  input:not(:checked) + .item {
+    &::before {
+      background: url('/assets/img/player-unselected-tab.svg') no-repeat
+        center center;
+    }
+
+    @screen lgDown {
+      background-color: theme('colors.card');
+    }
+  }
+
+  .body {
+    position: relative;
+    display: none;
+    width: 100%;
+    background-color: theme('colors.card');
+    border: 3px solid var(--color-primary);
+    border-radius: 8px;
+
+    &.selected {
+      display: block;
+    }
+
+    .about {
+      position: relative;
+      max-width: 42rem;
+    }
+
+    .gallery {
+      --margin-x: 19px;
+      --margin-y: 16px;
+
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      margin: calc(var(--margin-y)* -1) calc(var(--margin-x)*-1);
+
+      @screen lgDown {
+        justify-content: center;
+      }
+
+      img {
+        z-index: 200;
+        width: 200px;
+        height: 120px;
+        margin: var(--margin-y) var(--margin-x);
+        object-fit: contain;
+        background-color: theme('colors.bg');
+        border-radius: 6px;
+
+        @apply shadow-xl;
+      }
+    }
+
+    .credits {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      margin: -18px 0 0 -18px;
+
+      h4 {
+        margin-bottom: 12px;
+        font-weight: 700;
+        color: theme('colors.primary');
+      }
+
+      section {
+        flex-grow: 1;
+        width: 50%;
+        min-width: 300px;
+        padding: 18px;
+
+        p {
+          padding-bottom: 12px;
+        }
+      }
+    }
+
+    @screen lgDown {
+      background-color: transparent;
+      border: 0;
+
+      .about {
+        max-width: none;
+      }
+    }
+  }
+}
+
+
+
+
+/* css tabs */
+.tabs {
+  position: relative;   
+  min-height: 200px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+/* end css tabs */

@@ -1,156 +1,124 @@
-<style lang="scss" module>
-.intro {
-  @screen lgDown {
-    position: relative;
-    max-width: 100%;
-    padding: 32px 32px 0;
-    text-align: justify;
-  }
-}
-
-.hero {
-  position: relative;
-
-  .logo {
-    position: absolute;
-    top: 6%;
-    left: 4%;
-    width: 14vw;
-    max-width: 200px;
-
-    @screen lgDown {
-      top: 3%;
-      left: 3%;
-      width: 26vw;
-      max-width: 250px;
-    }
-  }
-
-  .img {
-    position: absolute;
-    top: 8%;
-    right: 4%;
-    width: 63%;
-
-    @screen lgDown {
-      top: 8.4%;
-      right: 6%;
-      width: 84%;
-    }
-
-    @screen sm {
-      top: 7%;
-    }
-  }
-
-  .title {
-    position: absolute;
-    top: 35%;
-    left: 4.25%;
-    font-size: min(3vw, 2.5rem);
-    line-height: 1;
-
-    @screen lgDown {
-      top: 77%;
-      left: 6.5%;
-      font-size: min(7vw, 4.2rem);
-      line-height: 1;
-    }
-
-    @screen sm {
-      top: 79%;
-      left: 9%;
-      font-size: 6vw;
-    }
-  }
-
-  .intro {
-    position: absolute;
-    top: 53%;
-    left: 7.25%;
-    max-width: 24%;
-    font-size: 1.125rem;
-  }
-
-  .award {
-    position: absolute;
-    right: 9%;
-    bottom: 1%;
-    max-width: 17.8vw;
-  }
-}
-</style>
-
-<section>
-<div>TOKYO REALTIME audio guided tours revealing new sides to Tokyo’s most
-        interesting neighborhoods. Due to
-        <span class="text-primary">Covid-19</span> restrictions on travel to
-        Japan, we've made this project free thanks to the sponsorship of White
-        Rabbit Express and Blackship. We hope you'll enjoy these imaginative
-        experiences of Tokyo informative and entertaining.`</div>
-
-    <div
-      class="container flex flex-wrap items-center justify-between mx-auto mdUp:py-2 xlUp:py-4"
-      :class="$style.hero"
-    >
-      <img
+<div>
+  <div class="container flex flex-wrap items-center justify-between mx-auto hero mdUp:py-2 xlUp:py-4">
+    <img
         src="/assets/img/{{title}}/hero-frame.svg"
         alt="header frame"
         class="z-20 lgDown:hidden"
-      />
-      <img
+/>
+    <img
         src="/assets/img/{{title}}/hero-frame-mobile.svg"
         alt="header frame"
         class="z-20 w-full xlUp:hidden"
-      />
-      <img
+/>
+    <img
         src="/assets/img/tr-logo.svg"
-        :class="$style.logo"
+        class="logo"
         alt="Tokyo Realtime logo"
-      />
-      <img
+/>
+    <img
         src="/assets/img/hero.png"
-        :class="$style.img"
-        alt="Futuristic Tokyo girl"
-        class="z-10 lgDown:hidden"
-      />
-      <img
+                alt="Futuristic Tokyo girl"
+        class="z-10 img lgDown:hidden"
+/>
+    <img
         src="/assets/img/hero-mobile.png"
-        :class="$style.img"
+        
         alt="Futuristic Tokyo girl"
-        class="z-10 xlUp:hidden"
-      />
+        class="z-10 img xlUp:hidden"
+/>
 
-      <img
+    <img
         src="/assets/img/award.png"
-        :class="$style.award"
-        class="xlUp:hidden"
-      />
+        
+        class="award xlUp:hidden"
+/>
 
-      <div :class="$style.title" class="z-30 font-bold">
-        <div      
-          class="{{ heroText }}"
-          class="mb-3"
+    <div class="z-30 font-bold title">
+      <div      
+          class="{{ heroText }} mb-3"
+          
         >
           Tokyo Soundwalks
         </div>
 
-        <div :class="`text-secondary`">
+      <div class="text-secondary">
           FOR FREE
         </div>
-      </div>
-
-      <div
-        :class="$style.intro"
-        class="z-50 pt-4 font-sans lgDown:hidden"
-        v-html="introText"
-      />
     </div>
 
-    <div
-      :class="$style.intro"
-      class="font-sans xlUp:hidden"
-      v-html="introText"
-    />
-</section>  
+    <div class="z-50 pt-4 font-sans intro lgDown:hidden">
+      TOKYO REALTIME audio guided tours revealing new sides to Tokyo’s most
+        interesting neighborhoods. Due to
+        <span class="text-primary">Covid-19</span> restrictions on travel to
+        Japan, we've made this project free thanks to the sponsorship of White
+        Rabbit Express and Blackship. We hope you'll enjoy these imaginative
+        experiences of Tokyo informative and entertaining.
+      </div>
+  </div>
 
+  <div class="font-sans intro xlUp:hidden">
+TOKYO REALTIME audio guided tours revealing new sides to Tokyo’s most
+        interesting neighborhoods. Due to
+        <span class="text-primary">Covid-19</span> restrictions on travel to
+        Japan, we've made this project free thanks to the sponsorship of White
+        Rabbit Express and Blackship. We hope you'll enjoy these imaginative
+        experiences of Tokyo informative and entertaining.
+        </div>
+
+  <section class="container mx-auto mb-12">
+    <div
+          class="relative flex flex-wrap items-center justify-between px-5 pt-5 mb-6 xlUp:mt-6 lgDown:mt-4 xlDown:justify-center"
+        >
+      <a :href="$static.metadata.wreUrl">
+
+        <div class="mx-2 my-6">
+          <div
+    class="flex flex-col justify-between font-bold text-center sponsor font-body">
+            <div class="flex justify-center">
+
+              <img
+                  src="/assets/img/wre-white-logo.png"
+                  alt="White Rabbit Express logo"/>
+
+            </div>
+            <div class="mdUp:text-xl text-centerd">
+
+              <div>Special order anything from Japan</div>
+              <div class="text-wre">
+                  whiterabbitexpress.com
+                </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <img src="/assets/img/award.png"           
+            class="award lgDown:hidden"/>
+
+      <a href="$static.metadata.blkUrl">
+        <div class="mx-2 my-4">
+
+          <div class="flex flex-col justify-between font-bold text-center sponsor font-body">
+            <div class="flex justify-center">
+
+              <img src="/assets/img/blackship-purple-logo.png"
+                  alt="Blackship logo"
+                  class="pt-1"
+                  blk
+/>
+
+            </div>
+            <div class="mdUp:text-xl text-centerd">
+
+              <div>Package forwarding from Japan</div>
+              <div class="text-blackship">
+                  blackship.com
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </section>
+</div>
