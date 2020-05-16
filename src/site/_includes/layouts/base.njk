@@ -7,9 +7,9 @@
     <title>{{ title }}</title>
     {% include "social.njk" %}
   </head>
-  <body class="container mx-auto mb-12 lg:max-w-4xl text-gray-700">
+  <body class="container mx-auto mb-12 text-gray-700 lg:max-w-4xl">
     {% include "header.njk" %}
-    <div class="content leading-relaxed">
+    <div class="leading-relaxed content">
       {{ content | safe }}
     </div>
     {% set js %}
@@ -17,6 +17,8 @@
       {% include "js/hello.js" %}
     {% endset %}
     <script>{{ js | jsmin | safe }}</script>
+
+    {% include 'footer.njk' %}
   </body>
 </html>
 
