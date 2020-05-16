@@ -46,7 +46,7 @@ When building for production, an extra build step will strip out all CSS classes
 
 ```bash
 
-# run the production build
+# Run the production build
 npm run build
 ```
 
