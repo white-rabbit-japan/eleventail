@@ -217,6 +217,9 @@ body {
   .info-tab-body {
     position: absolute;
     left: 0;
+    right: 0;
+    top: 50px;
+    overflow: hidden;
   }
   input[type=radio]:not(:checked) ~ .info-tab-body {
     display: none;
@@ -335,9 +338,6 @@ body {
   }
 
   .info-tab-body {
-    position: absolute;
-    display: none;
-
     width: 100%;
     background-color: theme('colors.card');
     border: 3px solid var(--color-primary);
