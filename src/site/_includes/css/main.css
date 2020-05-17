@@ -210,10 +210,20 @@ body {
 } */
 
 #infotabs {
-  position: relative;
-  
-  input ~ section { display: none; }
-  input:checked ~ section { display: block; }
+  clear:both;
+  .infotab {
+    float: left;
+  }
+  .info-tab-body {
+    position: absolute;
+    left: 0;
+  }
+  input[type=radio]:not(:checked) ~ .info-tab-body {
+    display: none;
+  }
+  input[type=radio]:checked ~ .info-tab-body {
+    display: block;
+  }
 }
 
 .body::before {
@@ -262,6 +272,7 @@ body {
   width: 100%;
 
   .item {
+    display: inline-block;
     position: relative;
     top: 1px;
     z-index: 1;
@@ -303,6 +314,7 @@ body {
   }
 
   input:checked + .item {
+    display: inline-block;
     color: black;
 
     @screen lgDown {
@@ -311,6 +323,7 @@ body {
   }
 
   input:not(:checked) + .item {
+    display: inline-block;
     &::before {
       background: url('/assets/img/player-unselected-tab.svg') no-repeat
         center center;

@@ -7,31 +7,24 @@
 <div id="infotabs" class="relative flex space-x-5 xlUp:ml-10 lgDown:justify-center lgDown:pb-2">
     {% for tab in tabs %}
     <div class="infotab">        
-            <input
-        type="radio"
-        name="infotabs"
-        id="tab-{{ tab.label }}"
-        value="what"
-        class="hidden"
-        {{ 'checked' if loop.first}}
-        onclick=""
->
-    <label for="tab-{{ tab.label }}" >{{tab.label}}</label>
-    <div class="font-black tracking-widest uppercase item"
-    data-content="{{ tab.label }}"></div>
+        <input
+            type="radio"
+            name="infotabs"
+            id="tab-{{ tab.label }}"
+            value="what"
+            class="hidden"
+            {{ 'checked' if loop.first}}
+            onclick=""
+            >
+        <label for="tab-{{ tab.label }}" class="font-black tracking-widest uppercase item"
+        data-content="{{ tab.label }}"></label>
 
-    <section class="info-tab-body">
-    <div class="mt-1">{{ tab.panel.html | safe if tab.panel.html else tab.panel.text }}</div>
-    </section>
+        <section class="info-tab-body">
+        <div class="mt-1">{{ tab.panel.html | safe if tab.panel.html else tab.panel.text }}</div>
+        </section>
     </div>
-</div>
 
-            
-
-    
     {% endfor %}
 
-    
-    
 </div>
 {% endmacro %}
