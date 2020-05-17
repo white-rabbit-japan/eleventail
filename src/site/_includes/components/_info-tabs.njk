@@ -20,7 +20,7 @@
         data-content="{{ tab.label }}"></label>
 
         <section class="info-tab-body">
-        <div class="mt-1">{{ tab.panel.html | safe if tab.panel.html else tab.panel.text }}</div>
+        {{ tab.panel.html | safe if tab.panel.html else tab.panel.text }}
         </section>
     </div>
 

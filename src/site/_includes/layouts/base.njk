@@ -1,30 +1,8 @@
-
 <!DOCTYPE html>
 <html >
   <head>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     <link rel="stylesheet" href="/css/styles.css"/>
-
-<link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
-<script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
-
-<script>
-  const player = new Plyr('#plyr');
-    var plyr = require("plyr")
-
-</script> 
-
-    <script type="text/javascript">
-// Change "{}" to your options:
-// https://github.com/sampotts/plyr/#options
-
-{# const player = new Plyr('audio', {}); #}
-
-// Expose player so it can be used from the console
-window.player = player;
-
-</script>
-
 
     <link
       rel="preconnect"
@@ -44,7 +22,39 @@ window.player = player;
       src="https://cdn.jsdelivr.net/npm/amplitudejs@5.0.3/dist/amplitude.min.js"
     ></script>
 
+<script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
 
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+
+
+
+<script>
+  window.onload = function(){
+      const player = new Plyr('#player');
+  }
+</script>
+
+<script>
+ window.onload = function(){
+  var slider = tns({
+    container: '.my-slider',
+    items: 1,
+    autoWidth: true,
+    slideBy:1,
+        mouseDrag: true,
+    lazyload: true,
+    swipeAngle: false,
+    speed: 400,
+  });
+ }
+</script>
 
   </head>
   <body class="{{title}}">

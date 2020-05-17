@@ -10,8 +10,8 @@ hero-text: text-black
 }
 </style>
 
-<div>
-    <div place-name="{{title}}" :class="name">
+<section class="container mx-auto">
+    <div place-name="{{title}}" class="name">
         <div class="px-1 py-16 mx-auto">
             <div
             place-name="{{title}}"
@@ -31,8 +31,8 @@ hero-text: text-black
 
                             {% set akihabaraHTML %}
                             <h1>PLAYER1</h1>
-                            <div id="plyr">
-                                <audio crossorigin playsinline>
+                            <div >
+                                <audio id="player" crossorigin playsinline controls>
                                     <source src="https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.mp3" type="audio/mp3">
                                     <source src="https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.ogg" type="audio/ogg">
                                 </audio>
@@ -74,28 +74,29 @@ hero-text: text-black
                             {% endset %}
 
                             {% set galleryHTML %}
-                            <div>
-                                <img src="/assets/img/gallery/akiba-1.jpg" alt="AV Factory"/>
-                                <img src="/assets/img/gallery/akiba-2.jpg" alt="Ayanami Rei"/>
-                                <img src="/assets/img/gallery/akiba-3.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-4.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-5.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-6.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-8.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-9.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-10.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-11.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-12.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-13.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-14.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-15.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-16.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-17.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-18.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-19.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-20.jpg" alt="Tech Shop"/>
-                                <img src="/assets/img/gallery/akiba-21.jpg" alt="Tech Shop"/>
-                            </div>
+
+                            <div class="my-slider">
+                                <div><img src="/assets/img/gallery/akiba-1.jpg" alt="AV Factory"/></div>
+                                <div><img src="/assets/img/gallery/akiba-2.jpg" alt="Ayanami Rei"/></div>
+                                <div><img src="/assets/img/gallery/akiba-3.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-4.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-5.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-6.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-8.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-9.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-10.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-11.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-12.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-13.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-14.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-15.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-16.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-17.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-18.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-19.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-20.jpg" alt="Tech Shop"/></div>
+                                <div><img src="/assets/img/gallery/akiba-21.jpg" alt="Tech Shop"/></div>
+                            </dic>
                             {% endset %}
 
                             {% set creditsHTML%}
@@ -220,4 +221,4 @@ hero-text: text-black
         {# tab #}
     </div>
 </div>
-</div>
+</section>

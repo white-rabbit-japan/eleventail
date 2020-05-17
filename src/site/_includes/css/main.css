@@ -222,7 +222,7 @@ body {
     overflow: hidden;
   }
   input[type=radio]:not(:checked) ~ .info-tab-body {
-    display: none;
+    visibility: hidden;
   }
   input[type=radio]:checked ~ .info-tab-body {
     display: block;
@@ -420,3 +420,6 @@ body {
 	max-width: 500px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+
+
