@@ -340,7 +340,7 @@ body {
   .info-tab-body {
     width: 100%;
     background-color: theme('colors.card');
-    border: 3px solid var(--color-primary);
+    border: 3px solid theme('colors.primary');
     border-radius: 8px;
 
     &.selected {
