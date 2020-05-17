@@ -211,7 +211,7 @@ body {
 
 #infotabs {
   clear: both;
-  min-height: 250px;
+  min-height: 666px;
   margin-bottom: 136px;
   .infotab {
     float: left;

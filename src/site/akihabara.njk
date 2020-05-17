@@ -35,12 +35,24 @@ hero-text: text-black
 
                             {% set akihabaraHTML %}
                             
-                            <div>
+                            {# <div>
                                 <audio id="player" crossorigin playsinline>
                                     <source src="/assets/audio/akihabara.mp3" type="audio/mp3">
-                                    
                                 </audio>
-                            </div>
+</div> #}
+
+{# <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="SWuneE1IuIo"></div> #}
+
+ <div class="plyr__video-embed" id="player">
+  <iframe
+    src="https://www.youtube.com/embed/SWuneE1IuIo?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+    
+    
+    
+  ></iframe>
+</div> 
+
+                            
                             {% endset %}
 
                             {% set tabs = [
@@ -80,10 +92,11 @@ hero-text: text-black
                             {% set galleryHTML %}
 
                             <div class="my-slider">
-                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-8.jpg" alt="Arisa"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-3.jpg" alt="Tech Shop"/></div>
+                                
                                 <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-1.jpg" alt="AV Factory"/></div>
                                 <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-2.jpg" alt="Ayanami Rei"/></div>
-                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-3.jpg" alt="Tech Shop"/></div>
+                                
                                 <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-4.jpg" alt="Tech Shop"/></div>
                                 <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-5.jpg" alt="Tech Shop"/></div>
                                 <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-6.jpg" alt="Tech Shop"/></div>                            
@@ -100,6 +113,7 @@ hero-text: text-black
                                 <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-19.jpg" alt="Tech Shop"/></div>
                                 <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-20.jpg" alt="Tech Shop"/></div>
                                 <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-21.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-8.jpg" alt="Arisa"/></div>
                             </dic>
                             {% endset %}
 
