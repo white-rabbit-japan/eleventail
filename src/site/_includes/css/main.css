@@ -202,8 +202,18 @@ body {
 
 /* tabs */
 
+/* 
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+} */
+
 #infotabs {
-  label.input:checked > section { display: none; }
+  position: relative;
+  
+  input ~ section { display: none; }
+  input:checked ~ section { display: block; }
 }
 
 .body::before {
@@ -311,9 +321,10 @@ body {
     }
   }
 
-  .body {
-    position: relative;
+  .info-tab-body {
+    position: absolute;
     display: none;
+
     width: 100%;
     background-color: theme('colors.card');
     border: 3px solid var(--color-primary);

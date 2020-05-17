@@ -30,12 +30,33 @@ before player
                      class="relative flex space-x-5 xlUp:ml-10 lgDown:justify-center lgDown:pb-2"
                      >
 
-                            {% from "components/_tabs.njk" import tab %}
+                    {% from "components/_tour-tabs.njk" import tourTabs %}
 
-                            {{ tab('tour', text='akihabara', link='akihabara')}}
-                            {{ tab('tour', text='kabukicho')}}
+                            {% set kakukichoHTML %}
+                            <h1>playe_here</h1>
+                            <div id="plyr">
+                                <audio crossorigin playsinline>
+                                    <source src="https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.mp3" type="audio/mp3">
+                                    <source src="https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.ogg" type="audio/ogg">
+                                </audio>
+                            </div>
+                            {% endset %}
 
-                            <h1>my Kabukicho page content</h1>
+                            {% set tabs = [
+                                {
+                                    label: 'akihabara',
+                                    path: 'akihabara'                                    
+                                }, {
+                                    label: 'kabukicho',
+                                    path: '',
+                                    panel: {
+                                        html: kabukichoHTML
+                                    }
+                                }
+                            ]
+ %}
+
+                            {{ tourTabs(tabs) }}
 
                         </div>
 
