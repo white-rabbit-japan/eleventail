@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html >
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     <link rel="stylesheet" href="/css/styles.css"/>
 
@@ -33,19 +34,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
 
+
+
+<script>
+  window.onload = function(){
+      const player = new Plyr('#player');
+  }
+</script>
+
 <script>
  window.onload = function(){
-    const player = new Plyr('#player');
-    
   var slider = tns({
     container: '.my-slider',
     items: 1,
-    center: true,
-    controls: true,
     autoWidth: true,
     slideBy:1,
-    mouseDrag: true,
+        mouseDrag: true,
     lazyload: true,
+    swipeAngle: false,
     speed: 400,
   });
  }
