@@ -3,13 +3,14 @@ title: akihabara
 layout: default
 hero-text: text-black
 ---
+
 <div>
     <div place-name="{{title}}" :class="name">
         <div class="px-1 py-16 mx-auto">
-            <TrPlayer
+            <div
             place-name="{{title}}"
-            place-description="Get an insider tour of Japan's pop culture mecca for anime, manga, maids and more."
-/>
+            place-description=""
+>Get an insider tour of Japan's pop culture mecca for anime, manga, maids and more.</div>
         </div>
         <div class="px-1 py-16 mx-auto">
             {# tab start #}
@@ -20,134 +21,197 @@ hero-text: text-black
                         <div
                      class="relative flex space-x-5 xlUp:ml-10 lgDown:justify-center lgDown:pb-2"
                      >
-                            {% from "components/_tabs.njk" import tab %}
+                            {% from "components/_tour-tabs.njk" import tourTabs %}
 
-                            {{ tab('tour', text='akihabara')}}
-                            {{ tab('tour', text='kabukicho', link='kabukicho')}}
+                            {% set akihabaraHTML %}
+                            <h1>PLAYER1</h1>
+                            <div id="plyr">
+                                <audio crossorigin playsinline>
+                                    <source src="https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.mp3" type="audio/mp3">
+                                    <source src="https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.ogg" type="audio/ogg">
+                                </audio>
+                            </div>
+                            {% endset %}
+
+                            {% set tabs = [
+                                {
+                                    label: 'akihabara',
+                                    path: '',
+                                    panel: {
+                                        html: akihabaraHTML
+                                    }
+                                }, {
+                                    label: 'kabukicho',
+                                    path: 'kabukicho'
+                                }
+                            ]
+ %}
+
+                            {{ tourTabs(tabs) }}
 
                         </div>
-                        <div class="{.body]: true,
-                     [$style.selected]: selectedTab === tab,
-                     }"
-                     >
-                            <div
-                        ref="tab.name"
-                        class="pt-8 text-lg xlUp:px-8"
-                        class="$style[tab.name]"
-                        >
-                                <div>
-                           TOKYO'S ELECTRIC TOWN, Akihabara is Japan's subculture hotspot for
-                           anime, manga, games and figures which attracts hardcore fans - and
-                           curious visitors - from all over the world. Internationally recognized
-                           experts on the area take you on an unforgettable, behind-the-scenes
-                           tour of the area. You'll visit all the must-see shops, gain historical
-                           knowledge, cultural insights and learn insider jargon like otagei,
-                           moé, itasha and more.
-                        </div>
-                                <div>
-                                    <img src="/assets/img/gallery/akiba-1.jpg" alt="AV Factory"/>
-                                    <img src="/assets/img/gallery/akiba-2.jpg" alt="Ayanami Rei"/>
-                                    <img src="/assets/img/gallery/akiba-3.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-4.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-5.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-6.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-8.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-9.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-10.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-11.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-12.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-13.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-14.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-15.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-16.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-17.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-18.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-19.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-20.jpg" alt="Tech Shop"/>
-                                    <img src="/assets/img/gallery/akiba-21.jpg" alt="Tech Shop"/>
-                                </div>
-                                <div>
-                                    <section>
-                                        <h4>Praise for the Tour</h4>
-                                        <p>
+
+                        
+
+                            {% from "components/_info-tabs.njk" import infoTabs %}
+
+                            {% set aboutHTML %}
+                            <div>
+                    TOKYO'S ELECTRIC TOWN, Akihabara is Japan's subculture hotspot for
+                    anime, manga, games and figures which attracts hardcore fans - and
+                    curious visitors - from all over the world. Internationally recognized
+                    experts on the area take you on an unforgettable, behind-the-scenes
+                    tour of the area. You'll visit all the must-see shops, gain historical
+                    knowledge, cultural insights and learn insider jargon like otagei,
+                    moé, itasha and more.
+                    </div>
+                            {% endset %}
+
+                            {% set galleryHTML %}
+                            <div>
+                                <img src="/assets/img/gallery/akiba-1.jpg" alt="AV Factory"/>
+                                <img src="/assets/img/gallery/akiba-2.jpg" alt="Ayanami Rei"/>
+                                <img src="/assets/img/gallery/akiba-3.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-4.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-5.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-6.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-8.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-9.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-10.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-11.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-12.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-13.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-14.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-15.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-16.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-17.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-18.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-19.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-20.jpg" alt="Tech Shop"/>
+                                <img src="/assets/img/gallery/akiba-21.jpg" alt="Tech Shop"/>
+                            </div>
+                            {% endset %}
+
+                            {% set creditsHTML%}
+                            <div>
+                                <section>
+                                    <h4>Praise for the Tour</h4>
+                                    <p>
                                  Akihabara is one of the world's most densely intricate urban
                                  enclaves, and producer Max Hodges has assembled a crack team of
                                  uber-geeks from Japan and abroad to navigate its alleys and decode
                                  its mysteries. The audio guide is an illuminating portal into the
                                  neighborhood's colorful history and vibrant currents of
                                  contemporary pizzazz.<br/>
-                                            <em
+                                        <em
                                     >- Roland Kelts, author of Japanamerica</em
                                     >
-                                        </p>
-                                        <p class="pt-6">
+                                    </p>
+                                    <p class="pt-6">
                                  Patrick W. Galbraith reveals an Akihabara that even a long-term
                                  resident like me didn't fully understand.<br/>
-                                            <em>- Jean Snow, Editor-in-Chief snow-mag.com</em>
-                                        </p>
-                                    </section>
-                                    <section>
-                                        <h4>Interviews with</h4>
-                                        <div>
-                                            <span class="font-bold">Patrick Macias</span> - Author of
+                                        <em>- Jean Snow, Editor-in-Chief snow-mag.com</em>
+                                    </p>
+                                </section>
+                                <section>
+                                    <h4>Interviews with</h4>
+                                    <div>
+                                        <span class="font-bold">Patrick Macias</span> - Author of
                                  "Cruising the Anime City" and editor of "Otaku USA Magazine"
                               </div>
-                                        <div>
-                                            <span class="font-bold">Morikawa Kaichiro</span> - Professor at
+                                    <div>
+                                        <span class="font-bold">Morikawa Kaichiro</span> - Professor at
                                  Meiji University & author of several books including "Learning
                                  from Akihabara"
                               </div>
-                                        <div>
-                                            <span class="font-bold">Danny Choo</span> - blogger and Tokyo
+                                    <div>
+                                        <span class="font-bold">Danny Choo</span> - blogger and Tokyo
                                  Stormtrooper
                               </div>
-                                        <div>
-                                            <span class="font-bold">Kobayashi Takaya</span> - local ward
+                                    <div>
+                                        <span class="font-bold">Kobayashi Takaya</span> - local ward
                                  councilman
                               </div>
-                                        <div>
-                                            <span class="font-bold">Kristina Dryza</span> - consumer trend
+                                    <div>
+                                        <span class="font-bold">Kristina Dryza</span> - consumer trend
                                  researcher
                               </div>
-                                        <div>
-                                            <span class="font-bold">Mei-chan</span>- otaku and former little
+                                    <div>
+                                        <span class="font-bold">Mei-chan</span>- otaku and former little
                                  sister at a sister café
                               </div>
-                                    </section>
-                                    <section>
-                                        <h4>About the Narrator</h4>
-                                        <p>
-                                            <span class="font-bold">Patrick W. Galbraith</span> is the author
+                                </section>
+                                <section>
+                                    <h4>About the Narrator</h4>
+                                    <p>
+                                        <span class="font-bold">Patrick W. Galbraith</span> is the author
                                  of "The Otaku Encyclopedia" and is a Ph.D. candidate at the
                                  University of Tokyo where he researches Akihabara and Otaku
                                  culture. He is a frequent contributor to Metropolis, Otaku USA
                                  Magazine and Otaku2.com
                               </p>
-                                    </section>
-                                    <section>
-                                        <h4>Music by</h4>
-                                        <div>
-                                            <span class="font-bold">Pa letee of @HomeCafé</span> - Happy Happy
+                                </section>
+                                <section>
+                                    <h4>Music by</h4>
+                                    <div>
+                                        <span class="font-bold">Pa letee of @HomeCafé</span> - Happy Happy
                                  Morning
                               </div>
-                                        <div>
-                                            <span class="font-bold">Cutie Pai</span> - Tokyo Refrain
+                                    <div>
+                                        <span class="font-bold">Cutie Pai</span> - Tokyo Refrain
                               </div>
-                                        <div>
-                                            <span class="font-bold">Shane Berry</span> - Canned Oden
+                                    <div>
+                                        <span class="font-bold">Shane Berry</span> - Canned Oden
                               </div>
-                                        <div>
-                                            <span class="font-bold">Damn Dangerous</span> - Nine to Five
+                                    <div>
+                                        <span class="font-bold">Damn Dangerous</span> - Nine to Five
                               </div>
-                                        <div>and others...</div>
-                                    </section>
-                                </div>
+                                    <div>and others...</div>
+                                </section>
                             </div>
-                        </div>
+                            {% endset %}
+
+                            {% set infotabs = [
+                                {
+                                    label: "about",
+                                    panel: {
+                                        html: aboutHTML
+                                    }
+                                }, {
+                                    label: "gallery",
+                                    panel: {
+                                        html: galleryHTML
+                                    }
+                                }, {
+                                    label: "credits",
+                                    panel: {
+                                        html: creditsHTML
+                                    }
+                                }
+                            ] %}
+
+                            {{ infoTabs(infotabs) }}
+
+                            {# label: "akihabara",                      #}
+                            {# {{ tab('details', text='about')}}
+                            {{ tab('details', text='gallery')}}
+                            {{ tab('details', text='credits')}} #}
+                        
+
+                        {# <div class="{.body]: true,
+                     [$style.selected]: selectedTab === tab,
+                     }"
+                     > #}
+                        <div
+
+                        class="pt-8 text-lg xlUp:px-8"
+
+                        ></div>
                     </div>
                 </div>
             </div>
-            {# tab #}
         </div>
+        {# tab #}
     </div>
+</div>
 </div>

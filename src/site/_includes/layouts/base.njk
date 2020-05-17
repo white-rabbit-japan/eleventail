@@ -1,8 +1,30 @@
+
 <!DOCTYPE html>
 <html >
   <head>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     <link rel="stylesheet" href="/css/styles.css"/>
+
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+<script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+
+<script>
+  const player = new Plyr('#plyr');
+    var plyr = require("plyr")
+
+</script> 
+
+    <script type="text/javascript">
+// Change "{}" to your options:
+// https://github.com/sampotts/plyr/#options
+
+{# const player = new Plyr('audio', {}); #}
+
+// Expose player so it can be used from the console
+window.player = player;
+
+</script>
+
 
     <link
       rel="preconnect"
@@ -21,6 +43,8 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/amplitudejs@5.0.3/dist/amplitude.min.js"
     ></script>
+
+
 
   </head>
   <body class="{{title}}">

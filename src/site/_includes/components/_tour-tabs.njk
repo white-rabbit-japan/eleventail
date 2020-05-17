@@ -1,0 +1,35 @@
+{# {label: "aakihabara", path: "", panel: {html: akihabara}},
+{label: "kkabukicho", path: "/kabukicho", panel: {html: akihabara}}, #}
+
+{# 'checked' added if path = '' (empty path designates the active tab) #}
+
+{% macro tourTabs(tabs) %}
+
+    {% for tab in tabs %}
+    <label>
+        <input
+            type="radio"
+            name="tour"
+            value="what"
+            class="hidden"
+            {{ 'checked' if tab.path == "" }}
+            {%if tab.path %}
+            onclick="window.location='/{{ tab.path }}';"
+            {% endif %}
+            />
+        <div class="font-black tracking-widest uppercase item"
+        data-content="{{ tab.label }}"></div>
+        </label> 
+    {% endfor %}
+
+    {% for tab in tabs %}
+        {% if tab.path == "" %}
+        
+            <section>
+                <div class="mt-12" >{{ tab.panel.html | safe if tab.panel.html else tab.panel.text }}</div> 
+            </section>
+        {% endif %}
+    {% endfor %}
+
+{% endmacro %}
+

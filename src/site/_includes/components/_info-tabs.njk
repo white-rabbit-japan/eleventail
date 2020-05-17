@@ -1,0 +1,30 @@
+{# {label: "aakihabara", path: "", panel: {html: akihabara}},
+{label: "kkabukicho", path: "/kabukicho", panel: {html: akihabara}}, #}
+
+{# 'checked' added if path = '' (empty path designates the active tab) #}
+
+{% macro infoTabs(tabs) %}
+<div id="infotabs" class="relative flex space-x-5 xlUp:ml-10 lgDown:justify-center lgDown:pb-2">
+    {% for tab in tabs %}
+        <label>
+            <input
+        type="radio"
+        name="infotabs"
+        value="what"
+        class="hidden"
+        {{ 'checked' if loop.first}}
+        onclick=""
+/>
+            <div class="font-black tracking-widest uppercase item"
+    data-content="{{ tab.label }}"></div>
+        </label>
+    {% endfor %}
+
+    {% for tab in tabs %}
+        <section>
+            <div class="mt-1">{{ tab.panel.html | safe if tab.panel.html else tab.panel.text }}</div>
+        </section>
+
+    {% endfor %}
+</div>
+{% endmacro %}
