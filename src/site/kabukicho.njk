@@ -3,4 +3,31 @@ title: kabukicho
 layout: default
 hero-text: text-white
 ---
-my Kabukicho page content
+<div>
+    <div place-name="{{title}}" :class="name">
+        <div class="px-1 py-16 mx-auto">
+            <TrPlayer
+            place-name="{{title}}"
+            place-description="Get an insider tour of Japan's pop culture mecca for anime, manga, maids and more."
+/>
+        </div>
+        <div class="px-1 py-16 mx-auto">
+            {# tab start #}
+            <div>
+                <div class="relative mx-auto akihabara">
+
+                    <div class="tabWrapper xlUp:pl-5 xlUp:pr-2">
+                        <div
+                     class="relative flex space-x-5 xlUp:ml-10 lgDown:justify-center lgDown:pb-2"
+                     >
+
+                            {% from "components/_tabs.njk" import tab %}
+
+                            {{ tab('tour', text='akihabara', link='akihabara')}}
+                            {{ tab('tour', text='kabukicho')}}
+
+                            <h1>my Kabukicho page content</h1>
+
+                        </div>
+                    </div>
+                </div>

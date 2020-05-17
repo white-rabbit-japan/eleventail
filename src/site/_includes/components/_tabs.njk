@@ -1,0 +1,16 @@
+{% macro tab(tabSetName, text='text', link='') %}
+  <label>
+    <input
+        type="radio"
+        name="{{ tabSetName }}"
+        value="tab"
+        class="hidden"
+        {{ 'checked' if link == '' }}
+        {%if link %}
+        onclick="window.location='/{{ link }}';"
+        {% endif %}
+        />
+    <div class="font-black tracking-widest uppercase item"
+    data-content="{{ text }}"></div>
+    </label>
+{% endmacro %}
