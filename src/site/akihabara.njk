@@ -8,6 +8,8 @@ hero-text: text-black
 :root {
     --color-primary: #f4de33;      
 }
+
+
 </style>
 
 <section class="container mx-auto">
@@ -25,14 +27,16 @@ hero-text: text-black
 
                     <div class="tabWrapper xlUp:pl-5 xlUp:pr-2">
                         <div
-                     class="relative flex space-x-5 xlUp:ml-10 lgDown:justify-center lgDown:pb-2"
+                     class=""
                      >
+
+                     {# relative flex space-x-5 xlUp:ml-10 lgDown:justify-center lgDown:pb-2 #}
                             {% from "components/_tour-tabs.njk" import tourTabs %}
 
                             {% set akihabaraHTML %}
-                            <h1>PLAYER1</h1>
-                            <div >
-                                <audio id="player" crossorigin playsinline controls>
+                            
+                            <div>
+                                <audio id="player" crossorigin playsinline>
                                     <source src="https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.mp3" type="audio/mp3">
                                     <source src="https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.ogg" type="audio/ogg">
                                 </audio>

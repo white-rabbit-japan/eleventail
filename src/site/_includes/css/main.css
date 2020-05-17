@@ -211,6 +211,8 @@ body {
 
 #infotabs {
   clear: both;
+  min-height: 250px;
+  margin-bottom: 136px;
   .infotab {
     float: left;
     &:first-child {
@@ -399,4 +401,15 @@ body {
   margin: 75px auto;
   max-width: 500px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+:root {
+  --plyr-color-main: theme('colors.primary');  
+  --plyr-font-family: monospace;
+  --plyr-font-size-time: 16px;
+  --plyr-audio-controls-background: theme('colors.card');
+  --plyr-audio-control-color: theme('colors.white');
+  --plyr-control-icon-size: 32px;
+  
 }
