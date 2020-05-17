@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="636px" height="279px" viewBox="0 0 636 279" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6,35 L624,35 C627.313708,35 630,37.6862915 630,41 L630,196.313266 C630,198.52801 628.779941,200.562648 626.826301,201.605904 L496.87631,271 L496.87631,271 L6,271 C2.6862915,271 1.29399067e-15,268.313708 0,265 L0,41 C4.82366169e-16,37.6862915 2.6862915,35 6,35 Z" id="path-1"></path>
+        <filter x="-0.8%" y="-1.7%" width="102.2%" height="106.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="2" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tokyo-Realtime-Credits-V2-(YELLOW-THEME)" transform="translate(-80.000000, -980.000000)">
+            <g id="PLAYER" transform="translate(81.000000, 979.000000)">
+                <g id="SELECTED-SECTION" transform="translate(0.000000, 0.448281)">
+                    <g id="Section-2" transform="translate(0.000000, 0.551719)">
+                        <g id="Group-2">
+                            <path d="M396.5,111.866282 L396.5,-63.9298766 L354.598504,-50.1969169 C352.749968,-49.5910702 351.5,-47.8660121 351.5,-45.9207258 L351.5,92.5144754 C351.5,94.4124379 352.690819,96.1063527 354.476736,96.748819 L396.5,111.866282 Z" id="Rectangle-Copy-5" stroke="#F4DE33" stroke-width="3" fill="#F4DE33" transform="translate(374.000000, 24.000000) scale(1, -1) rotate(-90.000000) translate(-374.000000, -24.000000) "></path>
+                            <g id="Combined-Shape">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <path stroke="#F4DE33" stroke-width="3" d="M496.500892,269.5 L626.119726,200.282745 C627.584956,199.500303 628.5,197.974324 628.5,196.313266 L628.5,41 C628.5,38.5147186 626.485281,36.5 624,36.5 L6,36.5 C3.51471863,36.5 1.5,38.5147186 1.5,41 L1.5,265 C1.5,267.485281 3.51471863,269.5 6,269.5 L496.500892,269.5 Z" stroke-linejoin="square" fill="#222946" fill-rule="evenodd"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

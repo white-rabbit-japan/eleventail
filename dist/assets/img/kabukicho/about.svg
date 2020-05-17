@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1244px" height="301px" viewBox="0 0 1244 301" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tokyo-Realtime-ABOUT-V2" transform="translate(-78.000000, -1764.000000)" stroke="#FF51AB" stroke-width="3">
+            <g id="ABOUT" transform="translate(80.000000, 1764.000000)">
+                <g id="Group-2">
+                    <path d="M149.5,111.866282 L149.5,-63.9298766 L107.598504,-50.1969169 C105.749968,-49.5910702 104.5,-47.8660121 104.5,-45.9207258 L104.5,92.5144754 C104.5,94.4124379 105.690819,96.1063527 107.476736,96.748819 L149.5,111.866282 Z" id="Rectangle-Copy-10" fill="#FF51AB" transform="translate(127.000000, 24.000000) scale(1, -1) rotate(-90.000000) translate(-127.000000, -24.000000) "></path>
+                    <path d="M6,48 L1234,48 C1237.31371,48 1240,50.6862915 1240,54 L1240,234.103114 C1240,236.514756 1238.55609,238.692025 1236.33447,239.630342 L1096.88673,298.527228 C1096.14799,298.839242 1095.35419,299 1094.55226,299 L6,299 C2.6862915,299 -4.82366169e-16,296.313708 0,293 L0,54 C-4.05812251e-16,50.6862915 2.6862915,48 6,48 Z" id="FRAME" fill="#222946"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

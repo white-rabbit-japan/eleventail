@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+
+    <link
+      rel="preconnect"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+      href="https://fonts.gstatic.com"
+/>
+    <link
+      rel="preload"
+      as="style"
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+/>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/amplitudejs@5.0.3/dist/amplitude.min.js"
+    ></script>
+
+<script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+
+
+
+<script>
+  window.onload = function(){
+      const player = new Plyr('#player');
+  }
+</script>
+
+<script>
+ window.onload = function(){
+  var slider = tns({
+    container: '.my-slider',
+    items: 1,
+    autoWidth: true,
+    slideBy:1,
+        mouseDrag: true,
+    lazyload: true,
+    swipeAngle: false,
+    speed: 400,
+  });
+ }
+</script>
+
+  </head>
+  <body class="akihabara">
+    <div class="flex flex-col min-h-screen pt-8 leading-normal text-white font-body content-wrapper bg-bg">
+
+      <div>
+  <div class="container flex flex-wrap items-center justify-between mx-auto hero mdUp:py-2 xlUp:py-4">
+    <img
+        src="/assets/img/akihabara/hero-frame.svg"
+        alt="header frame"
+        class="z-20 lgDown:hidden"
+/>
+    <img
+        src="/assets/img/akihabara/hero-frame-mobile.svg"
+        alt="header frame"
+        class="z-20 w-full xlUp:hidden"
+/>
+    <img
+        src="/assets/img/tr-logo.svg"
+        class="logo"
+        alt="Tokyo Realtime logo"
+/>
+    <img
+        src="/assets/img/hero.png"
+                alt="Futuristic Tokyo girl"
+        class="z-10 img lgDown:hidden"
+/>
+    <img
+        src="/assets/img/hero-mobile.png"
+        
+        alt="Futuristic Tokyo girl"
+        class="z-10 img xlUp:hidden"
+/>
+
+    <img
+        src="/assets/img/award.png"
+        
+        class="award xlUp:hidden"
+/>
+
+    <div class="z-30 font-bold title">
+      <div class="mb-3 text-black ">
+          Tokyo Soundwalks
+        </div>
+
+      <div class="text-secondary">
+          FOR FREE
+        </div>
+    </div>
+
+    <div class="z-50 pt-4 font-sans intro lgDown:hidden">
+      TOKYO REALTIME audio guided tours revealing new sides to Tokyo’s most
+        interesting neighborhoods. Due to
+        <span class="text-primary">Covid-19</span> restrictions on travel to
+        Japan, we've made this project free thanks to the sponsorship of White
+        Rabbit Express and Blackship. We hope you'll enjoy these imaginative
+        experiences of Tokyo informative and entertaining.
+      </div>
+  </div>
+
+  <div class="font-sans intro xlUp:hidden">
+TOKYO REALTIME audio guided tours revealing new sides to Tokyo’s most
+        interesting neighborhoods. Due to
+        <span class="text-primary">Covid-19</span> restrictions on travel to
+        Japan, we've made this project free thanks to the sponsorship of White
+        Rabbit Express and Blackship. We hope you'll enjoy these imaginative
+        experiences of Tokyo informative and entertaining.
+        </div>
+
+  <section class="container mx-auto mb-12">
+    <div
+          class="relative flex flex-wrap items-center justify-between px-5 pt-5 mb-6 xlUp:mt-6 lgDown:mt-4 xlDown:justify-center"
+        >
+      <a :href="$static.metadata.wreUrl">
+
+        <div class="mx-2 my-6">
+          <div
+    class="flex flex-col justify-between font-bold text-center sponsor font-body">
+            <div class="flex justify-center">
+
+              <img
+                  src="/assets/img/wre-white-logo.png"
+                  alt="White Rabbit Express logo"/>
+
+            </div>
+            <div class="mdUp:text-xl text-centerd">
+
+              <div>Special order anything from Japan</div>
+              <div class="text-wre">
+                  whiterabbitexpress.com
+                </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <img src="/assets/img/award.png"           
+            class="award lgDown:hidden"/>
+
+      <a href="$static.metadata.blkUrl">
+        <div class="mx-2 my-4">
+
+          <div class="flex flex-col justify-between font-bold text-center sponsor font-body">
+            <div class="flex justify-center">
+
+              <img src="/assets/img/blackship-purple-logo.png"
+                  alt="Blackship logo"
+                  class="pt-1"
+                  blk
+/>
+
+            </div>
+            <div class="mdUp:text-xl text-centerd">
+
+              <div>Package forwarding from Japan</div>
+              <div class="text-blackship">
+                  blackship.com
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </section>
+</div>
+
+      
+<style>
+:root {
+    --color-primary: #f4de33;      
+}
+
+
+</style>
+
+<section class="container mx-auto">
+    <div place-name="akihabara" class="name">
+        <div class="px-1 py-16 mx-auto">
+            <div
+            place-name="akihabara"
+            place-description=""
+>Get an insider tour of Japan's pop culture mecca for anime, manga, maids and more.</div>
+        </div>
+        <div class="px-1 py-16 mx-auto">
+            
+            <div>
+                <div class="relative mx-auto akihabara">
+
+                    <div class="tabWrapper xlUp:pl-5 xlUp:pr-2">
+                        <div
+                     class=""
+                     >
+
+                     
+                            
+
+                            
+
+                            
+
+                            
+
+
+<div id="infotabs" class="relative flex space-x-5 xlUp:ml-10 lgDown:justify-center lgDown:pb-2">
+    
+    <div class="infotab">        
+        <input
+            type="radio"
+            name="tour"
+            value="what"
+            class="hidden"
+            checked
+           
+            />
+            
+        <label for="tab-akihabara" class="font-black tracking-widest uppercase item"
+        data-content="akihabara"  ></label>
+
+        <section class="info-tab-body">
+        <div class="pt-8 text-lg xlUp:px-8 akihabara">
+        
+                            
+                            <div>
+                                <audio id="player" crossorigin playsinline>
+                                    <source src="/assets/audio/akihabara.mp3" type="audio/mp3">
+                                    
+                                </audio>
+                            </div>
+                            
+        </div>
+        </section>
+    </div>
+
+    
+    <div class="infotab">        
+        <input
+            type="radio"
+            name="tour"
+            value="what"
+            class="hidden"
+            
+           
+            />
+            
+        <label for="tab-kabukicho" class="font-black tracking-widest uppercase item"
+        data-content="kabukicho"  
+            onclick="window.location='/kabukicho';"
+            ></label>
+
+        <section class="info-tab-body">
+        <div class="pt-8 text-lg xlUp:px-8 kabukicho">
+        
+        </div>
+        </section>
+    </div>
+
+    
+</div>
+
+
+    
+
+
+
+                        </div>
+
+                        
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+<div id="infotabs" class="relative flex space-x-5 xlUp:ml-10 lgDown:justify-center lgDown:pb-2">
+    
+    <div class="infotab">        
+        <input
+            type="radio"
+            name="infotabs"
+            id="tab-gallery"
+            value="what"
+            class="hidden"
+            checked
+            onclick=""
+            >
+        <label for="tab-gallery" class="font-black tracking-widest uppercase item"
+        data-content="gallery"></label>
+
+        <section class="info-tab-body">
+        <div class="pt-8 text-lg xlUp:px-8 gallery">
+        
+
+                            <div class="my-slider">
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-8.jpg" alt="Arisa"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-1.jpg" alt="AV Factory"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-2.jpg" alt="Ayanami Rei"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-3.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-4.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-5.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-6.jpg" alt="Tech Shop"/></div>                            
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-9.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-10.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-11.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-12.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-13.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-14.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-15.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-16.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-17.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-18.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-19.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-20.jpg" alt="Tech Shop"/></div>
+                                <div><img class="tns-lazy-img" src="/assets/img/gallery/akiba-21.jpg" alt="Tech Shop"/></div>
+                            </dic>
+                            
+        </div>
+        </section>
+    </div>
+
+    
+    <div class="infotab">        
+        <input
+            type="radio"
+            name="infotabs"
+            id="tab-about"
+            value="what"
+            class="hidden"
+            
+            onclick=""
+            >
+        <label for="tab-about" class="font-black tracking-widest uppercase item"
+        data-content="about"></label>
+
+        <section class="info-tab-body">
+        <div class="pt-8 text-lg xlUp:px-8 about">
+        
+                            <div>
+                    TOKYO'S ELECTRIC TOWN, Akihabara is Japan's subculture hotspot for
+                    anime, manga, games and figures which attracts hardcore fans - and
+                    curious visitors - from all over the world. Internationally recognized
+                    experts on the area take you on an unforgettable, behind-the-scenes
+                    tour of the area. You'll visit all the must-see shops, gain historical
+                    knowledge, cultural insights and learn insider jargon like otagei,
+                    moé, itasha and more.
+                    </div>
+                            
+        </div>
+        </section>
+    </div>
+
+    
+    <div class="infotab">        
+        <input
+            type="radio"
+            name="infotabs"
+            id="tab-credits"
+            value="what"
+            class="hidden"
+            
+            onclick=""
+            >
+        <label for="tab-credits" class="font-black tracking-widest uppercase item"
+        data-content="credits"></label>
+
+        <section class="info-tab-body">
+        <div class="pt-8 text-lg xlUp:px-8 credits">
+        
+                            <div>
+                                <section>
+                                    <h4>Praise for the Tour</h4>
+                                    <p>
+                                 Akihabara is one of the world's most densely intricate urban
+                                 enclaves, and producer Max Hodges has assembled a crack team of
+                                 uber-geeks from Japan and abroad to navigate its alleys and decode
+                                 its mysteries. The audio guide is an illuminating portal into the
+                                 neighborhood's colorful history and vibrant currents of
+                                 contemporary pizzazz.<br/>
+                                        <em
+                                    >- Roland Kelts, author of Japanamerica</em
+                                    >
+                                    </p>
+                                    <p class="pt-6">
+                                 Patrick W. Galbraith reveals an Akihabara that even a long-term
+                                 resident like me didn't fully understand.<br/>
+                                        <em>- Jean Snow, Editor-in-Chief snow-mag.com</em>
+                                    </p>
+                                </section>
+                                <section>
+                                    <h4>Interviews with</h4>
+                                    <div>
+                                        <span class="font-bold">Patrick Macias</span> - Author of
+                                 "Cruising the Anime City" and editor of "Otaku USA Magazine"
+                              </div>
+                                    <div>
+                                        <span class="font-bold">Morikawa Kaichiro</span> - Professor at
+                                 Meiji University & author of several books including "Learning
+                                 from Akihabara"
+                              </div>
+                                    <div>
+                                        <span class="font-bold">Danny Choo</span> - blogger and Tokyo
+                                 Stormtrooper
+                              </div>
+                                    <div>
+                                        <span class="font-bold">Kobayashi Takaya</span> - local ward
+                                 councilman
+                              </div>
+                                    <div>
+                                        <span class="font-bold">Kristina Dryza</span> - consumer trend
+                                 researcher
+                              </div>
+                                    <div>
+                                        <span class="font-bold">Mei-chan</span>- otaku and former little
+                                 sister at a sister café
+                              </div>
+                                </section>
+                                <section>
+                                    <h4>About the Narrator</h4>
+                                    <p>
+                                        <span class="font-bold">Patrick W. Galbraith</span> is the author
+                                 of "The Otaku Encyclopedia" and is a Ph.D. candidate at the
+                                 University of Tokyo where he researches Akihabara and Otaku
+                                 culture. He is a frequent contributor to Metropolis, Otaku USA
+                                 Magazine and Otaku2.com
+                              </p>
+                                </section>
+                                <section>
+                                    <h4>Music by</h4>
+                                    <div>
+                                        <span class="font-bold">Pa letee of @HomeCafé</span> - Happy Happy
+                                 Morning
+                              </div>
+                                    <div>
+                                        <span class="font-bold">Cutie Pai</span> - Tokyo Refrain
+                              </div>
+                                    <div>
+                                        <span class="font-bold">Shane Berry</span> - Canned Oden
+                              </div>
+                                    <div>
+                                        <span class="font-bold">Damn Dangerous</span> - Nine to Five
+                              </div>
+                                    <div>and others...</div>
+                                </section>
+                            </div>
+                            
+        </div>
+        </section>
+    </div>
+
+    
+</div>
+
+
+
+                            
+                            
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</section>
+
+      <div class="py-10 font-sans text-white">
+
+    <div class="container mx-auto text-center" style="color: #7a8c96;">
+        <div class="text-lg">
+        Sponsored by
+        <img
+          src="../assets/img/blackship-gray-logo.png"
+          alt="Blackship logo"
+          class="inline-block mx-2"
+/>
+        &
+        <img src="/assets/img/wre-gray-logo.png"
+          alt="White Rabbit Japan logo"
+          class="inline-block pb-1 mx-2"
+/>
+        </div>
+    </div>
+</div>
+    </div>
+  </body>
+</html>

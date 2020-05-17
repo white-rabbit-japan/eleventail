@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1244px" height="729px" viewBox="0 0 1244 729" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tokyo-Realtime-Credits-V2" transform="translate(-78.000000, -1764.000000)" stroke="#FF51AB" stroke-width="3">
+            <g id="CREDITS" transform="translate(80.000000, 1764.000000)">
+                <g id="Group-3">
+                    <path d="M549.5,111.866282 L549.5,-63.9298766 L507.598504,-50.1969169 C505.749968,-49.5910702 504.5,-47.8660121 504.5,-45.9207258 L504.5,92.5144754 C504.5,94.4124379 505.690819,96.1063527 507.476736,96.748819 L549.5,111.866282 Z" id="Rectangle-Copy-12" fill="#EE559E" transform="translate(527.000000, 24.000000) scale(1, -1) rotate(-90.000000) translate(-527.000000, -24.000000) "></path>
+                    <path d="M6,48 L1234,48 C1237.31371,48 1240,50.6862915 1240,54 L1240,559.951503 C1240,561.405114 1239.47229,562.809296 1238.51494,563.903124 L1097.56017,724.95162 C1096.42086,726.253354 1094.77513,727 1093.04523,727 L6,727 C2.6862915,727 4.05812251e-16,724.313708 0,721 L0,54 C-4.05812251e-16,50.6862915 2.6862915,48 6,48 Z" id="FRAME" fill="#222946"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

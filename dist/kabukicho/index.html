@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+
+    <link
+      rel="preconnect"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+      href="https://fonts.gstatic.com"
+/>
+    <link
+      rel="preload"
+      as="style"
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+/>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/amplitudejs@5.0.3/dist/amplitude.min.js"
+    ></script>
+
+<script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+
+
+
+<script>
+  window.onload = function(){
+      const player = new Plyr('#player');
+  }
+</script>
+
+<script>
+ window.onload = function(){
+  var slider = tns({
+    container: '.my-slider',
+    items: 1,
+    autoWidth: true,
+    slideBy:1,
+        mouseDrag: true,
+    lazyload: true,
+    swipeAngle: false,
+    speed: 400,
+  });
+ }
+</script>
+
+  </head>
+  <body class="kabukicho">
+    <div class="flex flex-col min-h-screen pt-8 leading-normal text-white font-body content-wrapper bg-bg">
+
+      <div>
+  <div class="container flex flex-wrap items-center justify-between mx-auto hero mdUp:py-2 xlUp:py-4">
+    <img
+        src="/assets/img/kabukicho/hero-frame.svg"
+        alt="header frame"
+        class="z-20 lgDown:hidden"
+/>
+    <img
+        src="/assets/img/kabukicho/hero-frame-mobile.svg"
+        alt="header frame"
+        class="z-20 w-full xlUp:hidden"
+/>
+    <img
+        src="/assets/img/tr-logo.svg"
+        class="logo"
+        alt="Tokyo Realtime logo"
+/>
+    <img
+        src="/assets/img/hero.png"
+                alt="Futuristic Tokyo girl"
+        class="z-10 img lgDown:hidden"
+/>
+    <img
+        src="/assets/img/hero-mobile.png"
+        
+        alt="Futuristic Tokyo girl"
+        class="z-10 img xlUp:hidden"
+/>
+
+    <img
+        src="/assets/img/award.png"
+        
+        class="award xlUp:hidden"
+/>
+
+    <div class="z-30 font-bold title">
+      <div class="mb-3  text-white">
+          Tokyo Soundwalks
+        </div>
+
+      <div class="text-secondary">
+          FOR FREE
+        </div>
+    </div>
+
+    <div class="z-50 pt-4 font-sans intro lgDown:hidden">
+      TOKYO REALTIME audio guided tours revealing new sides to Tokyo’s most
+        interesting neighborhoods. Due to
+        <span class="text-primary">Covid-19</span> restrictions on travel to
+        Japan, we've made this project free thanks to the sponsorship of White
+        Rabbit Express and Blackship. We hope you'll enjoy these imaginative
+        experiences of Tokyo informative and entertaining.
+      </div>
+  </div>
+
+  <div class="font-sans intro xlUp:hidden">
+TOKYO REALTIME audio guided tours revealing new sides to Tokyo’s most
+        interesting neighborhoods. Due to
+        <span class="text-primary">Covid-19</span> restrictions on travel to
+        Japan, we've made this project free thanks to the sponsorship of White
+        Rabbit Express and Blackship. We hope you'll enjoy these imaginative
+        experiences of Tokyo informative and entertaining.
+        </div>
+
+  <section class="container mx-auto mb-12">
+    <div
+          class="relative flex flex-wrap items-center justify-between px-5 pt-5 mb-6 xlUp:mt-6 lgDown:mt-4 xlDown:justify-center"
+        >
+      <a :href="$static.metadata.wreUrl">
+
+        <div class="mx-2 my-6">
+          <div
+    class="flex flex-col justify-between font-bold text-center sponsor font-body">
+            <div class="flex justify-center">
+
+              <img
+                  src="/assets/img/wre-white-logo.png"
+                  alt="White Rabbit Express logo"/>
+
+            </div>
+            <div class="mdUp:text-xl text-centerd">
+
+              <div>Special order anything from Japan</div>
+              <div class="text-wre">
+                  whiterabbitexpress.com
+                </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <img src="/assets/img/award.png"           
+            class="award lgDown:hidden"/>
+
+      <a href="$static.metadata.blkUrl">
+        <div class="mx-2 my-4">
+
+          <div class="flex flex-col justify-between font-bold text-center sponsor font-body">
+            <div class="flex justify-center">
+
+              <img src="/assets/img/blackship-purple-logo.png"
+                  alt="Blackship logo"
+                  class="pt-1"
+                  blk
+/>
+
+            </div>
+            <div class="mdUp:text-xl text-centerd">
+
+              <div>Package forwarding from Japan</div>
+              <div class="text-blackship">
+                  blackship.com
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </section>
+</div>
+
+      
+<style>
+:root {
+    --color-primary: #ff51ab;
+}
+</style>
+
+<div>
+    <div place-name="kabukicho" :class="name">
+        <div class="px-1 py-16 mx-auto">
+            <TrPlayer
+            place-name="kabukicho"
+            place-description="Get an insider tour of Japan's pop culture mecca for anime, manga, maids and more."
+/>
+        </div>
+        <div class="px-1 py-16 mx-auto">
+            
+            <div>
+                <div class="relative mx-auto akihabara">
+
+before player
+                    <div id="plyr">
+                        <audio crossorigin playsinline controls>
+                            <source src="https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.mp3" type="audio/mp3">
+                            <source src="https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.ogg" type="audio/ogg">
+                        </audio>
+                    </div>
+                    after player
+
+                    <div class="tabWrapper xlUp:pl-5 xlUp:pr-2">
+                        <div
+                     class="relative flex space-x-5 xlUp:ml-10 lgDown:justify-center lgDown:pb-2"
+                     >
+
+                    
+
+                            
+
+                            
+
+                            
+
+
+<div id="infotabs" class="relative flex space-x-5 xlUp:ml-10 lgDown:justify-center lgDown:pb-2">
+    
+    <div class="infotab">        
+        <input
+            type="radio"
+            name="tour"
+            value="what"
+            class="hidden"
+            
+           
+            />
+            
+        <label for="tab-akihabara" class="font-black tracking-widest uppercase item"
+        data-content="akihabara"  
+            onclick="window.location='/akihabara';"
+            ></label>
+
+        <section class="info-tab-body">
+        <div class="pt-8 text-lg xlUp:px-8 akihabara">
+        
+        </div>
+        </section>
+    </div>
+
+    
+    <div class="infotab">        
+        <input
+            type="radio"
+            name="tour"
+            value="what"
+            class="hidden"
+            checked
+           
+            />
+            
+        <label for="tab-kabukicho" class="font-black tracking-widest uppercase item"
+        data-content="kabukicho"  ></label>
+
+        <section class="info-tab-body">
+        <div class="pt-8 text-lg xlUp:px-8 kabukicho">
+        
+        </div>
+        </section>
+    </div>
+
+    
+</div>
+
+
+    
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+      <div class="py-10 font-sans text-white">
+
+    <div class="container mx-auto text-center" style="color: #7a8c96;">
+        <div class="text-lg">
+        Sponsored by
+        <img
+          src="../assets/img/blackship-gray-logo.png"
+          alt="Blackship logo"
+          class="inline-block mx-2"
+/>
+        &
+        <img src="/assets/img/wre-gray-logo.png"
+          alt="White Rabbit Japan logo"
+          class="inline-block pb-1 mx-2"
+/>
+        </div>
+    </div>
+</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1203px" height="672px" viewBox="0 0 1203 672" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>PLAYER BG</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tokyo-Realtime-Credits-V2-(YELLOW-THEME)" transform="translate(-81.000000, -1016.000000)" fill="#222946">
+            <g id="PLAYER" transform="translate(81.000000, 979.000000)">
+                <path d="M6,709 C2.6862915,709 4.05812251e-16,706.313708 0,703 L0,703 L0,629.668534 C-1.08977644e-15,628.022361 0.676353296,626.448492 1.87064626,625.315554 L1.87064626,625.315554 L35,593.887 L35,43 C35,39.6862915 37.6862915,37 41,37 L1197,37 C1200.31371,37 1203,39.6862915 1203,43 L1203,703 C1203,706.313708 1200.31371,709 1197,709 Z" id="PLAYER-BG"></path>
+            </g>
+        </g>
+    </g>
+</svg>

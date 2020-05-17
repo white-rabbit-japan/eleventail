@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+
+    <link
+      rel="preconnect"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+      href="https://fonts.gstatic.com"
+/>
+    <link
+      rel="preload"
+      as="style"
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+/>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/amplitudejs@5.0.3/dist/amplitude.min.js"
+    ></script>
+
+<script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+
+
+
+<script>
+  window.onload = function(){
+      const player = new Plyr('#player');
+  }
+</script>
+
+<script>
+ window.onload = function(){
+  var slider = tns({
+    container: '.my-slider',
+    items: 1,
+    autoWidth: true,
+    slideBy:1,
+        mouseDrag: true,
+    lazyload: true,
+    swipeAngle: false,
+    speed: 400,
+  });
+ }
+</script>
+
+  </head>
+  <body class="ElevenTail - About">
+    <div class="flex flex-col min-h-screen pt-8 leading-normal text-white font-body content-wrapper bg-bg">
+
+      <div>
+  <div class="container flex flex-wrap items-center justify-between mx-auto hero mdUp:py-2 xlUp:py-4">
+    <img
+        src="/assets/img/ElevenTail - About/hero-frame.svg"
+        alt="header frame"
+        class="z-20 lgDown:hidden"
+/>
+    <img
+        src="/assets/img/ElevenTail - About/hero-frame-mobile.svg"
+        alt="header frame"
+        class="z-20 w-full xlUp:hidden"
+/>
+    <img
+        src="/assets/img/tr-logo.svg"
+        class="logo"
+        alt="Tokyo Realtime logo"
+/>
+    <img
+        src="/assets/img/hero.png"
+                alt="Futuristic Tokyo girl"
+        class="z-10 img lgDown:hidden"
+/>
+    <img
+        src="/assets/img/hero-mobile.png"
+        
+        alt="Futuristic Tokyo girl"
+        class="z-10 img xlUp:hidden"
+/>
+
+    <img
+        src="/assets/img/award.png"
+        
+        class="award xlUp:hidden"
+/>
+
+    <div class="z-30 font-bold title">
+      <div class="mb-3  ">
+          Tokyo Soundwalks
+        </div>
+
+      <div class="text-secondary">
+          FOR FREE
+        </div>
+    </div>
+
+    <div class="z-50 pt-4 font-sans intro lgDown:hidden">
+      TOKYO REALTIME audio guided tours revealing new sides to Tokyo’s most
+        interesting neighborhoods. Due to
+        <span class="text-primary">Covid-19</span> restrictions on travel to
+        Japan, we've made this project free thanks to the sponsorship of White
+        Rabbit Express and Blackship. We hope you'll enjoy these imaginative
+        experiences of Tokyo informative and entertaining.
+      </div>
+  </div>
+
+  <div class="font-sans intro xlUp:hidden">
+TOKYO REALTIME audio guided tours revealing new sides to Tokyo’s most
+        interesting neighborhoods. Due to
+        <span class="text-primary">Covid-19</span> restrictions on travel to
+        Japan, we've made this project free thanks to the sponsorship of White
+        Rabbit Express and Blackship. We hope you'll enjoy these imaginative
+        experiences of Tokyo informative and entertaining.
+        </div>
+
+  <section class="container mx-auto mb-12">
+    <div
+          class="relative flex flex-wrap items-center justify-between px-5 pt-5 mb-6 xlUp:mt-6 lgDown:mt-4 xlDown:justify-center"
+        >
+      <a :href="$static.metadata.wreUrl">
+
+        <div class="mx-2 my-6">
+          <div
+    class="flex flex-col justify-between font-bold text-center sponsor font-body">
+            <div class="flex justify-center">
+
+              <img
+                  src="/assets/img/wre-white-logo.png"
+                  alt="White Rabbit Express logo"/>
+
+            </div>
+            <div class="mdUp:text-xl text-centerd">
+
+              <div>Special order anything from Japan</div>
+              <div class="text-wre">
+                  whiterabbitexpress.com
+                </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <img src="/assets/img/award.png"           
+            class="award lgDown:hidden"/>
+
+      <a href="$static.metadata.blkUrl">
+        <div class="mx-2 my-4">
+
+          <div class="flex flex-col justify-between font-bold text-center sponsor font-body">
+            <div class="flex justify-center">
+
+              <img src="/assets/img/blackship-purple-logo.png"
+                  alt="Blackship logo"
+                  class="pt-1"
+                  blk
+/>
+
+            </div>
+            <div class="mdUp:text-xl text-centerd">
+
+              <div>Package forwarding from Japan</div>
+              <div class="text-blackship">
+                  blackship.com
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </section>
+</div>
+
+      
+<section>
+  <h1 class="heading">What does ElevenTail give me?</h1>
+  <p>
+    ElevenTail is the starting point <a href="https://twitter.com/philhawksworth">that I use</a> when building a site where I want to have:
+  </p>
+  <ul>
+    <li><a href="https://11ty.dev">Eleventy</a> for site generation configured with some common conventions like <a href="/blog">blog</a> collection</li>
+    <li><a href="https://tailwindcss.com">Tailwind CSS</a> for a utility-based CSS pipeline</li>
+    <li><a href="https://www.purgecss.com/">Purge CSS</a> for stripping unused CSS and minifying the result</li>
+    <li><a href="https://www.npmjs.com/package/uglify-js">Uglify JS</a> for basic JavaScript build pipeline</li>
+    <li>Serverless functions development pipeline via <a href="https://netlify.com/products/functions">Netlify Functions</a></li>
+    <li>Local support of <a href="https://netlify.com/products/edge">Netlify CDN</a> abilities such as <a href="https://docs.netlify.com/routing/redirects/redirect-options/">redirects</a> and <a href="https://docs.netlify.com/routing/headers">custom headers</a></li>
+  </ul>
+  <p>
+    ElevenTail is not a product, it's just something I maintain to use for myself. If you think it might be useful to you too, then great! Suggestions and contributions as pull requests are also welcome.
+  </p>
+</section>
+
+<section>
+  <h1 class="heading">How do I use it?</h1>
+  <p>To get started using ElevenTail for a site of your own:</p>
+  <ol>
+    <li>Initiate a new project from this <a href="https://github.com/philhawksworth/eleventail/generate" target="_BLANK" rel="noopener">GitHub Template</a></li>
+    <li>Clone a copy to your local machine: <code>git clone YOUR_REPO_URL</code></li>
+    <li>Install the dependencies: <code>npm install</code> </li>
+    <li>Run the local build environment: <code>netlify dev</code></li>
+  </ol>
+  <p>This will give you a local build and a local server which detects changes to give live rebuilds and reloads.</p>
+  <p>If you are planning to deploy your site to Netlify, you will also automatically get local support for the Netlify redirects API by running your local build with the command <code>netlify dev</code>.</p>
+</section>
+
+<section>
+  <h1 class="heading">Super speedy start</h1>
+  <p>
+    To create and deploy a new site from this template, and then start customising, you can click the button below which will:
+  </p>
+  <ul>
+    <li>Clone <a href="https://github.com/philhawksworth/eleventail">this repo</a> to a new repo in your own GitHub account</li>
+    <li>Create a new Netlify site linked to your new repo</li>
+    <li>Set up a CI/CD pipeline for your new site</li>
+  </ul>
+  <a class="inline-block p-4 mb-6 font-semibold text-white bg-teal-500 border-b-2 rounded shadow-lg hover:bg-teal-400" href="https://app.netlify.com/start/deploy?repository=https://github.com/philhawksworth/eleventail">Clone and set up a new site on Netlify</a>
+  <p>
+    This is the process I use to get a new site with all of its deployment and hosting set up as quickly as possible.
+  </p>
+</section>
+
+<section>
+    <h1 class="heading" id="possum">What the possum?</h1>
+    <p>
+      The possum became a playful mascot for Eleventy thanks to the wonderful James Williamson. He and Zach Leatherman,   Eleventy's creator, shared a playful sense of humor which culminated in this marvelously silly icon. Following the sad loss of James, <a href="https://www.11ty.dev/news/logo-homage/">Zach commissioned</a> a more formal possum illustration who's reminiscence of an O'Reilly book cover illustration inspired the design of this little site.
+    </p>
+    <img src="/images/possum-balloon.png" alt="The Elventy Possum Balloon" class="w-24 mt-6">
+  </section>
+
+
+
+
+      <div class="py-10 font-sans text-white">
+
+    <div class="container mx-auto text-center" style="color: #7a8c96;">
+        <div class="text-lg">
+        Sponsored by
+        <img
+          src="../assets/img/blackship-gray-logo.png"
+          alt="Blackship logo"
+          class="inline-block mx-2"
+/>
+        &
+        <img src="/assets/img/wre-gray-logo.png"
+          alt="White Rabbit Japan logo"
+          class="inline-block pb-1 mx-2"
+/>
+        </div>
+    </div>
+</div>
+    </div>
+  </body>
+</html>
