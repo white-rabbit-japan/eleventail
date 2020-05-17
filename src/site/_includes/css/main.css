@@ -223,7 +223,6 @@ body {
     left: 0;
     right: 0;
     top: 50px;
-    overflow: hidden;
   }
   input[type=radio]:not(:checked) ~ .info-tab-body {
     visibility: hidden;
@@ -233,7 +232,7 @@ body {
   }
 }
 
-.body::before {
+.info-tab-body::before {
   position: absolute;
   right: -3px;
   bottom: -103px;
