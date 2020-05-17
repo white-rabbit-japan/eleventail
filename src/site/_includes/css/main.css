@@ -213,8 +213,12 @@ body {
   clear:both;
   .infotab {
     float: left;
+    &:first-child {
+      margin-left: 30px;
+    }
   }
   .info-tab-body {
+    
     position: absolute;
     left: 0;
     right: 0;
@@ -249,7 +253,7 @@ body {
       center !important;
   }
 
-  .body::before {
+  .info-tab-body::before {
     background: url('/assets/img/akihabara/info-frame-bottom.svg') no-repeat
       center center !important;
   }
@@ -261,7 +265,7 @@ body {
       center !important;
   }
 
-  .body::before {
+  .info-tab-body::before {
     background: url('/assets/img/kabukicho/info-frame-bottom.svg') no-repeat
       center center !important;
   }

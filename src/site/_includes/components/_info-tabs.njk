@@ -4,6 +4,8 @@
 {# 'checked' added if path = '' (empty path designates the active tab) #}
 
 {% macro infoTabs(tabs) %}
+                        
+
 <div id="infotabs" class="relative flex space-x-5 xlUp:ml-10 lgDown:justify-center lgDown:pb-2">
     {% for tab in tabs %}
     <div class="infotab">        
@@ -20,11 +22,13 @@
         data-content="{{ tab.label }}"></label>
 
         <section class="info-tab-body">
+        <div class="pt-8 text-lg xlUp:px-8">
         {{ tab.panel.html | safe if tab.panel.html else tab.panel.text }}
+        </div>
         </section>
     </div>
 
     {% endfor %}
-
 </div>
+
 {% endmacro %}
