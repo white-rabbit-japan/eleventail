@@ -11,11 +11,6 @@ body {
   background-color: theme("colors.bg");
 }
 
-/* purgecss start ignore */
-@tailwind components;
-/* purgecss end ignore */
-
-@tailwind utilities;
 
 
 .container {
@@ -418,3 +413,8 @@ body {
   --plyr-control-icon-size: 32px;
   
 }
+/* purgecss start ignore */
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
