@@ -22,7 +22,7 @@
         data-content="{{ tab.label }}"></label>
 
         <section class="info-tab-body">
-        <div class="pt-8 text-lg xlUp:px-8">
+        <div class="pt-8 text-lg xlUp:px-8 {{tab.label}}">
         {{ tab.panel.html | safe if tab.panel.html else tab.panel.text }}
         </div>
         </section>

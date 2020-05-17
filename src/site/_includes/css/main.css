@@ -210,7 +210,7 @@ body {
 } */
 
 #infotabs {
-  clear:both;
+  clear: both;
   .infotab {
     float: left;
     &:first-child {
@@ -218,16 +218,15 @@ body {
     }
   }
   .info-tab-body {
-    
     position: absolute;
     left: 0;
     right: 0;
     top: 50px;
   }
-  input[type=radio]:not(:checked) ~ .info-tab-body {
+  input[type="radio"]:not(:checked) ~ .info-tab-body {
     visibility: hidden;
   }
-  input[type=radio]:checked ~ .info-tab-body {
+  input[type="radio"]:checked ~ .info-tab-body {
     display: block;
   }
 }
@@ -239,7 +238,7 @@ body {
   left: -3px;
   display: block;
   height: 146px;
-  content: '';
+  content: "";
 
   @screen lgDown {
     display: none;
@@ -248,24 +247,24 @@ body {
 
 .akihabara {
   input:checked + .item::before {
-    background: url('/assets/img/akihabara/selected-tab.svg') no-repeat center
+    background: url("/assets/img/akihabara/selected-tab.svg") no-repeat center
       center !important;
   }
 
   .info-tab-body::before {
-    background: url('/assets/img/akihabara/info-frame-bottom.svg') no-repeat
+    background: url("/assets/img/akihabara/info-frame-bottom.svg") no-repeat
       center center !important;
   }
 }
 
 .kabukicho {
   input:checked + .item::before {
-    background: url('/assets/img/kabukicho/selected-tab.svg') no-repeat center
+    background: url("/assets/img/kabukicho/selected-tab.svg") no-repeat center
       center !important;
   }
 
   .info-tab-body::before {
-    background: url('/assets/img/kabukicho/info-frame-bottom.svg') no-repeat
+    background: url("/assets/img/kabukicho/info-frame-bottom.svg") no-repeat
       center center !important;
   }
 }
@@ -286,7 +285,7 @@ body {
     height: var(--tab-h);
     cursor: pointer;
 
-     /* stylelint-disable-next-line */
+    /* stylelint-disable-next-line */
     &::before {
       position: absolute;
       top: 0;
@@ -294,7 +293,7 @@ body {
       display: block;
       width: var(--tab-w);
       height: var(--tab-h);
-      content: '';
+      content: "";
     }
 
     &::after {
@@ -324,26 +323,26 @@ body {
     color: black;
 
     @screen lgDown {
-      background-color: theme('colors.primary');
+      background-color: theme("colors.primary");
     }
   }
 
   input:not(:checked) + .item {
     display: inline-block;
     &::before {
-      background: url('/assets/img/player-unselected-tab.svg') no-repeat
-        center center;
+      background: url("/assets/img/player-unselected-tab.svg") no-repeat center
+        center;
     }
 
     @screen lgDown {
-      background-color: theme('colors.card');
+      background-color: theme("colors.card");
     }
   }
 
   .info-tab-body {
     width: 100%;
-    background-color: theme('colors.card');
-    border: 3px solid theme('colors.primary');
+    background-color: theme("colors.card");
+    border: 3px solid theme("colors.primary");
     border-radius: 8px;
 
     &.selected {
@@ -356,29 +355,7 @@ body {
     }
 
     .gallery {
-      --margin-x: 19px;
-      --margin-y: 16px;
-
       position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      margin: calc(var(--margin-y)* -1) calc(var(--margin-x)*-1);
-
-      @screen lgDown {
-        justify-content: center;
-      }
-
-      img {
-        z-index: 200;
-        width: 200px;
-        height: 120px;
-        margin: var(--margin-y) var(--margin-x);
-        object-fit: contain;
-        background-color: theme('colors.bg');
-        border-radius: 6px;
-
-        @apply shadow-xl;
-      }
     }
 
     .credits {
@@ -390,7 +367,7 @@ body {
       h4 {
         margin-bottom: 12px;
         font-weight: 700;
-        color: theme('colors.primary');
+        color: theme("colors.primary");
       }
 
       section {
@@ -419,10 +396,7 @@ body {
 /* plyr */
 
 #plyr {
-	margin: 75px auto;
-	max-width: 500px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 75px auto;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-
-
