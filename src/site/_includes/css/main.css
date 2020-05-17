@@ -1,3 +1,5 @@
+/* purgecss start ignore */
+/* purgecss start ignore */
 @tailwind base;
 
 html {
@@ -413,3 +415,4 @@ body {
   --plyr-control-icon-size: 32px;
   
 }
+/* purgecss end ignore */
