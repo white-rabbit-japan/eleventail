@@ -1,7 +1,6 @@
 /* purgecss start ignore */
-/* purgecss start ignore */
 @tailwind base;
-
+/* purgecss end ignore */
 html {
   overflow-x: hidden;
   font-size: 16px;
@@ -11,9 +10,6 @@ body {
   overflow-x: hidden;
   background-color: theme("colors.bg");
 }
-
-@tailwind components;
-@tailwind utilities;
 
 .container {
   @apply max-w-full px-6;
@@ -415,4 +411,8 @@ body {
   --plyr-control-icon-size: 32px;
   
 }
+/* purgecss start ignore */
+@tailwind components;
 /* purgecss end ignore */
+
+@tailwind utilities;
