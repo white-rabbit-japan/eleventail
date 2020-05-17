@@ -9,9 +9,9 @@
     "url": "https://github.com/philhawksworth/eleventail"
   },
   "scripts": {
-    "build": "npm-run-all build:css build:html",
-    "build:css": "postcss src/site/_includes/css/main.css -o src/site/css/styles.css",
-    "build:html": "eleventy",
+    "xbuild": "npm-run-all build:css build:html",
+    "xbuild:css": "postcss src/site/_includes/css/main.css -o src/site/css/styles.css",
+    "xbuild:html": "eleventy",
     "watch": "npm-run-all --parallel watch:css watch:html",
     "watch:css": "postcss src/site/_includes/css/main.css -o src/site/css/styles.css --watch",
     "watch:html": "eleventy --serve --port=8181",
